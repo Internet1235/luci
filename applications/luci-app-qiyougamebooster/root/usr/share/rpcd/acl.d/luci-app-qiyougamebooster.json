@@ -2,8 +2,8 @@
 	"luci-app-qiyougamebooster": { 
 		"description": "Grant UCI access for luci-app-qiyougamebooster",
 		"read": {
-			"file": {
-				"/usr/bin/qiyougamebooster.sh": [ "exec" ]
+			"ubus": {
+				"service": [ "list" ]
 			},
 			"uci": [ "qiyougamebooster" ]
 		},

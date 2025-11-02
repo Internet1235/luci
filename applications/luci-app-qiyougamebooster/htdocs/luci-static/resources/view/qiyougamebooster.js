@@ -3,42 +3,36 @@
 'use strict';
 'require form';
 'require poll';
+'require rpc';
 'require uci';
 'require view';
-'require fs';
 
-function getStatus() {
-	var result
-	try {
-		result = fs.exec('/usr/bin/qiyougamebooster.sh', ['status']);
-		return result.then(function(status) {
-			return status.stdout.trim() 
-		})
-	} catch (e) { }
-		return result;
+const callServiceList = rpc.declare({
+	object: 'service',
+	method: 'list',
+	params: ['name'],
+	expect: { '': {} }
+});
+
+function getServiceStatus() {
+	return L.resolveDefault(callServiceList('qiyougamebooster'), {}).then(function (res) {
+		var isRunning = false;
+		try {
+			isRunning = res['qiyougamebooster']['instances']['qiyougamebooster']['running'];
+		} catch (e) { }
+		return isRunning;
+	});
 }
 
-function getVersion() {
-	var result
-	try {
-		result = fs.exec('/usr/bin/qiyougamebooster.sh', ['version'])
-		return result.then(function(version) {
-			return version.stdout.trim() || _('QiYou Game Booster');
-		}).catch(function() {
-			return _('QiYou Game Booster');
-		});
-	} catch (e) { }
-		return Promise.resolve(_('QiYou Game Booster'));
-}
-
-function renderStatus(status, version) {
-	var spanTemp = '<span style="color:%s"><strong>%s: %s %s</strong></span>';
+function renderStatus(isRunning) {
+	var spanTemp = '<span style="color:%s"><strong>%s %s</strong></span>';
 	var renderHTML;
-	if (status == 'NOT ENABLED' || status == 'NOT RUNNING' || status == 'NOT SUPPORTED') {
-		renderHTML = spanTemp.format('red', _('Status'), _(version), _(status));
+	if (isRunning) {
+		renderHTML = spanTemp.format('green', _('QiYou Game Booster'), _('RUNNING'))
 	} else {
-		renderHTML = spanTemp.format('green', _('Status'), _(version), _(status));
+		renderHTML = spanTemp.format('red', _('QiYou Game Booster'), _('NOT RUNNING'));
 	}
+ 
 	return renderHTML;
 }
 
@@ -60,11 +54,9 @@ return view.extend({
 		s.anonymous = true;
 		s.render = function () {
 			poll.add(function () {
-				return L.resolveDefault(getStatus()).then(function (status) {
-					return L.resolveDefault(getVersion()).then(function (version) {
-						var view = document.getElementById('service_status');
-						view.innerHTML = renderStatus(status, version);
-					});
+				return L.resolveDefault(getServiceStatus()).then(function (res) {
+					var view = document.getElementById('service_status');
+					view.innerHTML = renderStatus(res);
 				});
 			});
 

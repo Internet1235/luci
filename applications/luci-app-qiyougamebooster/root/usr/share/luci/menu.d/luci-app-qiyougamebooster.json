@@ -7,9 +7,6 @@
 		},
 		"depends": {
 			"acl": [ "luci-app-qiyougamebooster" ],
-			"fs": {
-				"/usr/bin/qiyougamebooster.sh": "executable"
-			},
 			"uci": { "qiyougamebooster": true }
 		}
 	}
