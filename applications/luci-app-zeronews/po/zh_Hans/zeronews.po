@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-02-01 14:59+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Internet1235 "
+"<135099493+Internet1235@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/luci/luci/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -41,7 +41,7 @@ msgstr "加载中…"
 
 #: applications/luci-app-zeronews/root/usr/share/luci/menu.d/luci-app-zeronews.json:21
 msgid "Log"
-msgstr "后勤"
+msgstr "日志"
 
 #: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/log.js:48
 msgid "Log file does not exist."
