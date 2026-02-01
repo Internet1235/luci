@@ -32,9 +32,9 @@ function renderStatus(isRunning) {
 	if (isRunning) {
 		var button = String.format('&#160;<a class="btn cbi-button" href="https://user.zeronews.cc/device" target="_blank" rel="noreferrer noopener">%s</a>',
 			_('Open Console'));
-		renderHTML = spanTemp.format('green', _('Zeronews'), _('RUNNING')) + button;
+		renderHTML = spanTemp.format('green', _('ZeroNews'), _('RUNNING')) + button;
 	} else {
-		renderHTML = spanTemp.format('red', _('Zeronews'), _('NOT RUNNING'));
+		renderHTML = spanTemp.format('red', _('ZeroNews'), _('NOT RUNNING'));
 	}
  
 	return renderHTML;
