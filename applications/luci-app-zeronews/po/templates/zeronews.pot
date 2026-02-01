@@ -1,0 +1,53 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:50
+msgid ""
+"ZeroNews is an innovative edge cloud intranet penetration platform designed to help users " 
+"quickly address security and fast access needs between internal and external networks."
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:69
+msgid "Enable"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:75
+msgid "Please enter your Token"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:33
+msgid "RUNNING"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:35
+msgid "NOT RUNNING"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:65
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/log.js:32
+msgid "Collecting data..."
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:32
+msgid "Open Console"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:81
+msgid "Reset"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:82
+msgid "Reset ZeroNews"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:88
+msgid "Reset Successful"
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/log.js:39
+msgid "Log is empty."
+msgstr ""
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/log.js:30
+msgid "Loading..."
+msgstr ""

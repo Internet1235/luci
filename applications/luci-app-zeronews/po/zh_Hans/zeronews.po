@@ -1,0 +1,32 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:50
+msgid ""
+"ZeroNews is an innovative edge cloud intranet penetration platform designed to help users " 
+"quickly address security and fast access needs between internal and external networks."
+msgstr "ZeroNews 是一个创新的边缘云内网穿透平台，旨在帮助用户快速解决内网与外网之间的安全、快速访问需求。"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:69
+msgid "Enable"
+msgstr "启用"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:75
+msgid "Please enter your Token"
+msgstr "请输入您的Token"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:33
+msgid "RUNNING"
+msgstr "运行中"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:35
+msgid "NOT RUNNING"
+msgstr "未在运行"
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:65
+msgid "Collecting data..."
+msgstr "正在收集数据中..."
+
+#: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:32
+msgid "Open Console"
+msgstr "打开控制台"
