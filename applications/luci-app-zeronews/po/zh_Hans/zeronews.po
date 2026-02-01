@@ -1,11 +1,14 @@
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-01 14:59+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/luci/luci/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/log.js:65
 msgid "Clear Log"
@@ -37,7 +40,7 @@ msgstr ""
 
 #: applications/luci-app-zeronews/root/usr/share/luci/menu.d/luci-app-zeronews.json:21
 msgid "Log"
-msgstr ""
+msgstr "后勤"
 
 #: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/log.js:48
 msgid "Log file does not exist."
