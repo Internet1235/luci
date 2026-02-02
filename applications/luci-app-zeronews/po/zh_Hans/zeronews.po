@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-02-01 16:20+0000\n"
+"PO-Revision-Date: 2026-02-02 01:11+0000\n"
 "Last-Translator: Internet1235 "
 "<135099493+Internet1235@users.noreply.github.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -100,7 +100,7 @@ msgstr "未知错误：%s"
 #: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:53
 #: applications/luci-app-zeronews/root/usr/share/luci/menu.d/luci-app-zeronews.json:3
 msgid "ZeroNews"
-msgstr "ZeroNews"
+msgstr "ZeroNews 零讯"
 
 #: applications/luci-app-zeronews/htdocs/luci-static/resources/view/zeronews/config.js:54
 msgid ""
